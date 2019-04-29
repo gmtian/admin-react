@@ -15,14 +15,12 @@ class App extends Component {
           <Sider />
           <Layout style={{ marginLeft: 200 }}>
             <Header />
-            <Layout.Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
-              <div style={{ padding: 24, background: '#fff', textAlign: 'center' }}>
-                <Switch>
-                  <Route path='/' exact component={BookPage}></Route>
-                  <Route path='/user' exact component={UserPage}></Route>
-                  <Redirect to="/"></Redirect>
-                </Switch>
-              </div>
+            <Layout.Content style={{ padding: 20 }}>
+              <Switch>
+                <Route path='/' exact component={BookPage}></Route>
+                <Route path='/user' exact component={UserPage}></Route>
+                <Redirect to="/"></Redirect>
+              </Switch>
             </Layout.Content>
           </Layout>
         </Layout>
