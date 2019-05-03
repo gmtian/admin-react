@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { Layout } from 'antd';
+import { HeaderWrapper } from './style';
 
 class Header extends Component {
   render() {
     return (
-      <Layout.Header style={{ background: '#fff', padding: 0 }} />
+      <HeaderWrapper></HeaderWrapper>
     )
   }
 }
 
 export default Header;
+

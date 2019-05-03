@@ -6,11 +6,21 @@ export const BookWrap = styled.div`
 
 export const TopWrap = styled.div`
   display: flex;
-  height: 40px;
+  padding: 20px;
   justify-content: space-between;
   align-items: center;
+
+  .left {
+    display: flex;
+    button {
+      margin-left: 10px;
+    }
+  }
 `
 
 export const MainWrap = styled.section`
-  background-color: #fff;
+  padding: 20px;
+  img {
+    height: 30px;
+  }
 `

@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
-import { BrowserRouter, hashRouter, Route, Redirect, Switch } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Redirect, Switch } from 'react-router-dom';
 import { Layout } from 'antd';
-import Sider from './common/components/Sider';
-import Header from './common/components/Header';
+import Sider from './common/sider';
+import Header from './common/header';
 import BookPage from './pages/Book';
 import UserPage from './pages/User';
 
+import './App.less'
 
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <Layout>
           <Sider />
           <Layout style={{ marginLeft: 200 }}>
@@ -24,7 +25,7 @@ class App extends Component {
             </Layout.Content>
           </Layout>
         </Layout>
-      </BrowserRouter>
+      </HashRouter>
     )
   }
 }

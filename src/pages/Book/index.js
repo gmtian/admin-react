@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Input, Table } from 'antd';
 import { BookWrap, TopWrap, MainWrap } from './style';
+import http from '@/utils/http.js'
 
 
 const dataSource = [{
@@ -52,6 +53,13 @@ class Book extends Component {
         </MainWrap>
       </BookWrap>
     )
+  }
+
+  componentDidMount() {
+    http.get('/api/book')
+    .then(res => {
+      console.log(res)
+    })
   }
 }
 export default Book;
