@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, HashRouter, Route, Redirect, Switch } from 'react-router-dom';
+import { HashRouter, Route, Redirect, Switch } from 'react-router-dom';
 import { Layout } from 'antd';
 import Sider from './common/sider';
 import Header from './common/header';
